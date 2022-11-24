@@ -44,8 +44,7 @@ while(confirmupper === false && confirmlower === false && confirmspecialChar ===
   var confirmnumber = confirm("Click OK to confirm if you would like to include numeric characters.");    
 }
 
-//generate string of characters based on user's criteria
-// this random list is generated out the arrays of characters based on the criteria the user selects
+//generate array of characters based on user's criteria
 var passwordCharacters = []
       
 if (confirmlower) {
@@ -66,8 +65,7 @@ if (confirmnumber) {
 
       console.log(passwordCharacters)
 
-    // generate random password
-//empty string is random character from each iteration from for loop.
+    // randomize the above array of user's criter to generate random password.
       var password = ""
       
       for (let i = 0; i < confirmlength; i++) {
